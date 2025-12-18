@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Elden Banner",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Shows an Elden Ring-style banner for GitHub events like PR merges and approvals",
   "permissions": ["storage"],
   "action": {

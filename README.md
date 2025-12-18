@@ -5,6 +5,8 @@ An Elden Ring–inspired browser extension that shows dramatic banners for GitHu
 When you merge a PR, a cinematic **"PR MERGED"** banner appears with sound — just like defeating a boss in the Lands Between.
 
 > 🗡️ Forked from [Elden Email](https://github.com/MettiFire/elden_mail_banner) by [MettiFire](https://github.com/MettiFire)
+>
+> 📦 [landenenglish/elden_banner](https://github.com/landenenglish/elden_banner)
 
 ---
 
