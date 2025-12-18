@@ -1,19 +1,33 @@
 {
   "manifest_version": 3,
-  "name": "Elden Banner",
-  "version": "2.0.0",
-  "description": "Shows an Elden Ring-style banner for GitHub events like PR merges and approvals",
+  "name": "Elden Email",
+  "version": "1.1.1",
+  "description": "Shows an Elden Ring banner when you send an email",
   "permissions": ["storage"],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "48": "assets/icon.png"
-    }
-  },
-  "host_permissions": ["https://github.com/*"],
+   "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "assets/icon.png"
+      }
+   },
+    "host_permissions": [
+      "https://mail.google.com/*",
+      "https://outlook.office.com/*",
+      "https://outlook.live.com/*",
+      "https://outlook.office365.com/*",
+      "https://mail.proton.me/*",
+      "https://mail.aol.com/*"
+    ],
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
+      "matches": [
+        "https://mail.google.com/*",
+        "https://outlook.office.com/*",
+        "https://outlook.live.com/*",
+        "https://outlook.office365.com/*",
+        "https://mail.proton.me/*",
+        "https://mail.aol.com/*"
+      ],
       "js": ["content.js"],
       "css": ["style.css"],
       "all_frames": true
@@ -24,8 +38,16 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["assets/elden_ring_sound.mp3", "assets/Mantinia.otf"],
-      "matches": ["https://github.com/*"]
+      "resources": ["assets/email_sent_yellow.png", "assets/email_sent_blue.png", "assets/email_sent_red.png","assets/elden_ring_sound.mp3", "assets/Matinia.otf"],
+      "matches": [
+        "https://mail.google.com/*",
+        "https://outlook.office.com/*",
+        "https://outlook.live.com/*",
+        "https://outlook.office365.com/*",
+        "https://mail.proton.me/*",
+        "https://mail.aol.com/*"
+      ]
     }
   ]
 }
+
